@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<a href="AuthenticationCode.html">Auth Page</a>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Robux Generator</title>
+</head>
+<body style="background:black; color:lime; font-family:monospace;">
+  <h2>ROBUX GENERATOR v3.1</h2>
+  <p>인증코드를 입력하세요:</p>
+  <input type="text" id="code">
+  <button onclick="check()">확인</button>
+  <p id="result"></p>
+
+  <script>
+    function check() {
+      const val = document.getElementById("code").value;
+      if(val === "1234") {
+        document.getElementById("result").innerText = "인증 성공! ... 근데 장난임 ㅋㅋ";
+      } else {
+        document.getElementById("result").innerText = "잘못된 코드!";
+      }
+    }
+  </script>
+</body>
+</html>
