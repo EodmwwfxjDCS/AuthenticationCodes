@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <title>Robux Generator</title>
 </head>
-<body style="background:black; color:lime; font-family:monospace;">
-  <h2>ROBUX GENERATOR v3.1</h2>
-  <p>인증코드를 입력하세요:</p>
-  <input type="text" id="code">
-  <button onclick="check()">확인</button>
-  <p id="result"></p>
+<body style="background:black; color:lime; font-family:monospace; width:100%; height:100vh; margin:0;">
+
+  <h2 style="font-size:40px;">ROBUX GENERATOR v3.1</h2>
+  <p style="font-size:24px;">Enter your Auth Code:</p>
+  <input type="text" id="code" style="font-size:24px; padding:10px;">
+  <button onclick="check()" style="font-size:24px; padding:10px;">Verify</button>
+  <p id="result" style="font-size:24px;"></p>
 
   <script>
     function check() {
@@ -23,4 +24,3 @@
   </script>
 </body>
 </html>
-
